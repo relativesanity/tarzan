@@ -8,7 +8,7 @@ module ArticleHelper
   end
 
   def article_style(article)
-    article.style.downcase.to_param
+    article.style.to_s.downcase.to_param
   end
 
 end

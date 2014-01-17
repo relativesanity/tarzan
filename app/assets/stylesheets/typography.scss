@@ -44,3 +44,16 @@ blockquote  {
   border-top: 1px #EEE solid;
   border-bottom: 1px #EEE solid;
 }
+pre, code {
+  border: 1px solid #CCC;
+  background-color: #EEE;
+  font-family: monospace;
+}
+pre {
+  margin-bottom:  2em;
+  padding: 0.8em 1.1em;
+  line-height:  1.5em;
+}
+pre>code {
+  border: none;
+}

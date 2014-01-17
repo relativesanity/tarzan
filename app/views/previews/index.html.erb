@@ -1,0 +1,16 @@
+<% content_for :page_title, 'Previews & Drafts'.html_safe %>
+
+<div class="header">
+  <h1>Previews &amp; Drafts</h1>
+</div>
+
+<div class="article listing">
+  <h2>Previews</h2>
+  <ul>
+    <%= render :partial => 'articles/article', :collection => @previews, :as => :article %>
+  </ul>
+  <h2>Drafts</h2>
+  <ul>
+    <%= render :partial => 'articles/article', :collection => @drafts, :as => :article %>
+  </ul>
+</div>

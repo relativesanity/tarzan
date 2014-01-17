@@ -9,4 +9,8 @@ Tarzan::Application.routes.draw do
   match 'articles/:slug' => 'articles#show'
   match 'articles' => 'articles#list'
 
+  match 'previews/:slug' => 'previews#show'
+  match 'previews' => 'previews#index'
+  match 'reload' => 'previews#reload'
+
 end
