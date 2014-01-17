@@ -19,6 +19,6 @@ Blog = Chimpdoc::Blog.new
 BLOG_TITLE = "Tarzan"
 BLOG_SUBTITLE = "an example"
 BLOG_DESCRIPTION = "a sample site running on Chimpdoc."
-BLOG_URL = "http://www.relativesanity.com"
+BLOG_URL = "http://www.example.com"
 BLOG_USER = "owner"
 BLOG_PASSWORD = "password"
