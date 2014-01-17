@@ -11,8 +11,8 @@ gem 'dalli'
 # till it gets a real release
 gem 'chimpdoc', :git => 'git://github.com/relativesanity/chimpdoc.git'
 
-gem 'pg' # prevent heroku from freaking out that we don't use the DB
-group(:development, :test) { gem 'sqlite3' }
+# gem 'pg' # prevent heroku from freaking out that we don't use the DB
+group(:development) { gem 'sqlite3' }
 
 gem 'rdiscount'
 
