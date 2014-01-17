@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tarzan</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <title><%= page_title %></title>
+
+  <%= stylesheet_link_tag "application", media: "all" %>
+
   <%= javascript_include_tag "application" %>
+
   <%= csrf_meta_tags %>
+  <%= auto_discovery_link_tag :rss, feed_url(:format => "rss") %>
+  <%= article_date %>
+
+  <meta name="viewport" content="initial-scale = 1.0">
+  <meta name="description" content="<%= site_description %>" />
 </head>
+
 <body>
 
-<%= yield %>
+  <div class="title header">
+    <h1><%= link_to site_title, root_url %></h1>
+    <p><%= site_subtitle %></p>
+  </div>
+
+  <div class="stage">
+    <%= yield %>
+  </div>
+
+  <div class="footer">
+    <div class="navigation">
+      <%= link_to "articles", articles_url %>
+    </div>
+  </div>
 
 </body>
 </html>

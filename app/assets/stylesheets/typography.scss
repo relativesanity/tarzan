@@ -1,0 +1,46 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size:  105%;
+}
+
+.article,
+.title.header p,
+.footer .navigation
+{
+  font-family: "Times New Roman", Times, sans-serif;
+}
+.article {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+}
+.title.header p,
+.footer .navigation
+{
+  font-style: italic;
+}
+.icon {
+  font-style: normal;
+  font-size:  1.2em;
+  font-family: 'Picons-Font';
+  vertical-align: middle;
+}
+
+a {
+  color:  #00F;
+  font-weight:  bold;
+  text-decoration:  none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+blockquote  {
+  text-align: center;
+  font-style: italic;
+  color:  #888;
+  padding-top:  2em;
+  margin-bottom:  2em;
+  border-top: 1px #EEE solid;
+  border-bottom: 1px #EEE solid;
+}
